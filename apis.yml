@@ -1,8 +1,25 @@
 aid: maimai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/maimai.png
 name: Maimai
-description: 'Maimai is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Maimai (脉脉) is a Chinese professional networking and workplace social
+  platform operated by Beijing Taoyou Tianxia Technology Development Co., Ltd. It
+  combines professional networking, recruitment and talent matching, job referrals,
+  company reviews and workplace community, and career-development learning (脉课堂)
+  for the Chinese-language market. Surfaced as a portfolio company of dcm-ventures
+  and added to the API Evangelist network. As of this enrichment pass Maimai
+  publishes no public developer program, open platform, or API documentation, so
+  this profile carries identity and domain-security signals only.'
 url: https://raw.githubusercontent.com/api-evangelist/maimai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Professional Networking
+- Social Network
+- Recruitment
+- Careers
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/maimai-domain-security.yml
 - type: Website
   url: https://maimai.cn/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
